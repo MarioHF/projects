@@ -1,8 +1,12 @@
 module.exports = function()
 {
-    this.list = function(conn,callback)
-    {
-        conn.query('select * from books',callback);
-    };
-    return this;
+    return function(conn)
+    {  
+        this.list = function(callback)
+        {
+            conn.query('select * from books',callback);
+        };
+        console.log(this)
+        return this;
+    }        
 };
