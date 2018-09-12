@@ -3,7 +3,7 @@
  */
 var mysql = require('mysql');
 
-module.exports = function ()
+function createDBConnection()
 {
     return mysql.createConnection
     (
@@ -14,4 +14,10 @@ module.exports = function ()
             database : 'codehouse'
         }
     );
-}
+};
+
+//Wrapper
+module.exports = function()
+{
+    return createDBConnection;
+};
