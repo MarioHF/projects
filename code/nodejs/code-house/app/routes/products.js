@@ -7,7 +7,7 @@ module.exports = function(app)
         
         var conn =  app.infra.connectionFactory();
         //using new operator to create a new object instance
-        var dbProducts =  new app.infra.dbProducts(conn);
+        var dbProducts =  new app.infra.ProductsDAO(conn);
 
         //using a callback function to expect the query result
         dbProducts.list(
