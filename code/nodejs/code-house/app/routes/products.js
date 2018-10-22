@@ -42,6 +42,7 @@ module.exports = function(app)
         var conn = app.infra.connectionFactory();
         var productsDAO = new app.infra.ProductsDAO(conn);
         productsDAO.save(product,function(err,results){
+            console.log('Error:'+err);
             res.redirect('/products');
         });
     });

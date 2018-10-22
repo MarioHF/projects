@@ -15,6 +15,7 @@ module.exports = function ()
 
     //using bodyparser with extended true
     app.use(bodyParser.urlencoded({extended:true}));
+    app.use(bodyParser.json());
 
 
     //Load dependencies
