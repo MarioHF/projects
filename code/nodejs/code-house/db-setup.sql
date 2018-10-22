@@ -10,6 +10,7 @@ create table books (
 
 select * from books;
 
+alter table books modify name products
 alter table books modify book_description varchar(40);
 alter table books change book_name title varchar(20);
 alter table books change book_description detail varchar(40);
