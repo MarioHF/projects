@@ -3,10 +3,21 @@ package br.com.argentum.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+
+/**
+ * 
+ * @author mario
+ *
+ */
 public class CandlestickFactory {
 	
 	public Candlestick candlestickDateGenerator(List<Negociation> negociations, LocalDateTime date)
 	{
+		
+		if(negociations.isEmpty())
+		{
+			return new Candlestick(0, 0, 0, 0, 0, LocalDateTime.now());
+		}
 		
 		double openValue = negociations.get(0).getPrice();
 		double closeValue = negociations.get(negociations.size()-1).getPrice();

@@ -2,6 +2,12 @@ package br.com.argentum.model;
 
 import java.time.LocalDateTime;
 
+
+/**
+ * 
+ * @author mario
+ *
+ */
 public final class Candlestick {
 	
 	private final double openValue;
