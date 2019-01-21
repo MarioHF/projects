@@ -1,0 +1,17 @@
+Components can be nested
+
+ng generate component componentName - Generates a new component, creating the folder, .html,.css,.ts and the component entry in app.module
+Each component should have the folders name equals to his name
+Each component has his own Decorator specifying the selector, template Url and style
+
+The tamplate property can be filled with the relative component path(templateUrl) or in tags(template)
+Template is a REQUIRED property
+
+The styles property can be filled with the relative component path(stylesUrl) or in pure code(styles)
+Template is a NOT REQUIRED property
+You can combien both options of styles, however make sure to apply it as an array
+
+You can define a selector as an attribute putting into [] 
+and swapping the tag definition in the index.html do a html property with the selector name like : <div app-servers>
+It is also recognized defining it as a class
+
