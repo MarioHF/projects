@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
+
 
 @Component({
   selector: 'app-servers',
@@ -10,7 +11,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
-  serverName = ""
+  serverName = 'TestServer'
 
   constructor() { 
       setTimeout(

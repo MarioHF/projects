@@ -29,4 +29,4 @@ Events
     Event property
         Has a target that contains a value
         can be used via $event in the html file and as the function parameter in TS file
-
+        Two way binding : [(ngModel)]="variableName". it will update the variable wherever it is being used
