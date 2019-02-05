@@ -25,4 +25,8 @@ Data Binding
 Events
     defined in the TS file as functions
     called in html using (click)="eventName"
+    $event -> capture data
+    Event property
+        Has a target that contains a value
+        can be used via $event in the html file and as the function parameter in TS file
 
