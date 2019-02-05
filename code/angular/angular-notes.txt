@@ -22,3 +22,7 @@ Data Binding
         ->Property Binding - Used in specifying scenario : [html property]=propertyName
         DONT MIX BOTH
 
+Events
+    defined in the TS file as functions
+    called in html using (click)="eventName"
+

@@ -1,7 +1,8 @@
 <button 
   class="btn btn-primary"
-  [disabled]="!allowNewServer"> Add Server </button>
-<p>{{ allowNewServer }}</p>
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"> Add Server </button>
+<p>{{ serverCreationStatus }}</p>
 <p>
   servers works!
 </p>
