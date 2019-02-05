@@ -15,3 +15,10 @@ You can define a selector as an attribute putting into []
 and swapping the tag definition in the index.html do a html property with the selector name like : <div app-servers>
 It is also recognized defining it as a class
 
+Data Binding
+    Communication between Components
+    Output Data
+        ->String inerporlation - Defined in TS file and used with {{ var }} in the template
+        ->Property Binding - Used in specifying scenario : [html property]=propertyName
+        DONT MIX BOTH
+
