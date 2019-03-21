@@ -30,3 +30,14 @@ Events
         Has a target that contains a value
         can be used via $event in the html file and as the function parameter in TS file
         Two way binding : [(ngModel)]="variableName". it will update the variable wherever it is being used
+
+
+Directives
+    Directives are isntructions in the DOM
+    Defined via a Decorator- @Directive
+    Use *ngIf to make a refence to a Directive - <p ngIf="name">
+    Unlike structuras directives, attribute directives dont add or remove
+    element. They only change the element they were placed on.
+    It is possible to change style properties using [ngStyle]
+    It is possible using class by [ngClass]
+    Using  **ngFor="let item of items" is possible to make usage of arrays of components

@@ -7,17 +7,14 @@
   
 <!-- two way data binding-->
 <input 
-  type="test"
+  type="text"
   class="form-control"
   [(ngModel)]="serverName">
 
-<!-- <p>{{serverName}}</p> -->
 <button 
   class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="onCreateServer()"> Add Server </button>
-<p>{{ serverCreationStatus }}</p>
-<p>
-  servers works!
-</p>
-<app-server></app-server>
+
+<p *ngIf="serverCreated">servers works! server name is {{ serverName }} </p>
+<app-server *ngFor="let server of servers"></app-server>
